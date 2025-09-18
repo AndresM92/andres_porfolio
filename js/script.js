@@ -7,6 +7,7 @@ function ShowHidden_Menu() {
         menuVis = false;
     }else{
         document.getElementById("nav").classList="responsive";
+        menuVis = true;
     }
 }
 
