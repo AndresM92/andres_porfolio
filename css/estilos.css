@@ -43,7 +43,7 @@ html {
 }
 
 .contenedor-header header nav ul li a {
-   
+
     color: #fff;
     margin: 0 15px;
     padding: 3px;
@@ -64,9 +64,9 @@ html {
     display: none;
 }
 
-.inicio{
-    background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
-    url(../img/fondo.jpg);
+.inicio {
+    background: linear-gradient(to top, rgba(30, 35, 38, .8), rgba(30, 35, 38, 1)),
+        url(../img/fondo.jpg);
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -281,7 +281,7 @@ html {
     margin-bottom: 10px;
 }
 
-.skills .skill span img{
+.skills .skill span img {
     max-width: 30px;
     height: 30px;
 }
@@ -527,7 +527,7 @@ html {
 
 .curriculum .fila .item .school {
     color: #1CB698;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     display: block;
 }
@@ -547,9 +547,16 @@ html {
     margin-right: 20px;
 }
 
+.curriculum .fila .izq img {
+    border-radius: 10%;
+    margin-top: 10px;
+    margin-right: 15px;
+    max-width: clamp(3.8rem, 5.0vw, 10rem);
+}
+
 .curriculum .fila .der {
-    border-right: 2px solid #1CB698;
-    margin-right: 20px;
+    border-left: 2px solid #1CB698;
+    margin-left: 20px;
 }
 
 .curriculum .fila .item .conectori {
@@ -579,7 +586,7 @@ html {
     width: 47px;
     position: absolute;
     top: 50%;
-    left: -47px;
+    left: -45px;
     z-index: 5;
 }
 
@@ -649,8 +656,8 @@ html {
     opacity: 0;
 }
 
-.portfolio .galeria .proyecto .overlay .ico_tecn img{
-    max-width: 40px; 
+.portfolio .galeria .proyecto .overlay .ico_tecn img {
+    max-width: 40px;
     height: 40px;
 }
 
@@ -776,7 +783,7 @@ html {
     margin-right: 10px;
 }
 
-footer{
+footer {
     background-color: #252A2E;
     color: #fff;
     padding: 50px 0 30px 0;
@@ -786,11 +793,11 @@ footer{
 }
 
 
-footer .redes{
+footer .redes {
     margin-bottom: 20px;
 }
 
-footer .redes a{
+footer .redes a {
     color: #fff;
     display: inline-block;
     text-decoration: none;
@@ -803,7 +810,7 @@ footer .redes a{
     transition: .3s;
 }
 
-footer .arriba{
+footer .arriba {
     display: block;
     width: 50px;
     height: 50px;
@@ -818,14 +825,16 @@ footer .arriba{
     font-size: 18px;
 }
 
-@media screen and (max-width:980px){
-    nav{
+@media screen and (max-width:980px) {
+    nav {
         display: none;
     }
-    .nav-responsive{
+
+    .nav-responsive {
         display: block;
     }
-    nav.responsive{
+
+    nav.responsive {
         display: block;
         position: absolute;
         right: 0;
@@ -833,57 +842,73 @@ footer .arriba{
         background-color: #252A2E;
         width: 180px;
     }
-    nav.responsive ul{
+
+    nav.responsive ul {
         display: block !important;
     }
-    nav.responsive ul li{
+
+    nav.responsive ul li {
         border-bottom: 1px solid #fff;
         padding: 10px 0;
     }
 }
 
-@media screen and (max-width:700px){
-    .sobremi .fila{
+@media screen and (max-width:700px) {
+    .sobremi .fila {
         display: block;
     }
-    .sobremi .fila .col{
+
+    .sobremi .fila .col {
         width: fit-content;
     }
 
-    .skills .fila{
+    .skills .fila {
         display: block;
     }
-    .skills .fila .col{
-        width: 100%;
-    }
-    .skills .fila .col .barra-skill{
+
+    .skills .fila .col {
         width: 100%;
     }
 
-    .curriculum .fila{
+    .skills .fila .col .barra-skill {
+        width: 100%;
+    }
+
+    .curriculum .fila {
         display: block;
     }
-    .curriculum .fila .col{
+
+    .curriculum .fila .col {
         width: 90%;
     }
-    .curriculum .fila .derecha{
+
+    .curriculum .fila .col .izq{
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .curriculum .fila .derecha {
         margin-left: 20px;
     }
 
-    .portfolio .galeria{
+    .portfolio .galeria {
         display: block;
         width: 100%;
     }
-    .portfolio .galeria .proyecto{
+
+    .portfolio .galeria .proyecto {
         max-width: 100%;
     }
-    .portfolio .galeria .proyecto img{
+
+    .portfolio .galeria .proyecto img {
         width: 100%;
     }
-    .contacto .fila{
+
+    .contacto .fila {
         display: block;
     }
-    .contacto .fila .col{
+
+    .contacto .fila .col {
         width: 100%;
     }
 }
