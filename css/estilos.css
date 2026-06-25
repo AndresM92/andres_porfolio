@@ -160,6 +160,7 @@ html {
 }
 
 .sobremi .fila .col h3 {
+
     font-size: 28px;
     font-family: 'Righteous';
     margin-bottom: 25px;
@@ -282,8 +283,9 @@ html {
 }
 
 .skills .skill span img {
-    max-width: 30px;
-    height: 30px;
+    margin: 10px;
+    max-width: 60px;
+    height: 60px;
 }
 
 .skills .skill .barra-skill {
@@ -854,6 +856,7 @@ footer .arriba {
 }
 
 @media screen and (max-width:700px) {
+
     .sobremi .fila {
         display: block;
     }
@@ -870,6 +873,12 @@ footer .arriba {
         width: 100%;
     }
 
+    .skills .skill span img {
+        margin: 3px;
+        max-width: 50px;
+        height: 50px;
+    }
+
     .skills .fila .col .barra-skill {
         width: 100%;
     }
@@ -882,7 +891,7 @@ footer .arriba {
         width: 90%;
     }
 
-    .curriculum .fila .col .izq{
+    .curriculum .fila .col .izq {
         text-align: center;
         flex-direction: column;
     }
@@ -910,5 +919,15 @@ footer .arriba {
 
     .contacto .fila .col {
         width: 100%;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+
+    .skills .skill span img {
+        margin: 5px;
+        max-width: 45px;
+        height: 45px;
     }
 }
